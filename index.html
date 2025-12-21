@@ -5,27 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
 </head>
+
 <body>
-    <h1>Abdul Rafay </h1>
+    <header>
+    <h1>Abdul Rafay</h1>
+    </header>
+    <main>
     <p>
-       <b><i><u>Summary:</u></i></b> Final-year Computer Science student with hands-on experience in cybersecurity operations and a growing skill set in front-end web development. Experienced in SIEM monitoring (Wazuh), vulnerability assessment, and basic network tools like Wireshark and Packet Tracer. Actively building projects using HTML and GitHub while learning CSS, JavaScript, and responsive design. Open to trainee or entry-level roles in both web development and information security, with a strong drive to grow in any tech domain where opportunity exists. Currently awaiting official graduation, having completed all coursework.
+       <section><b><i><u>Summary:</u></i></b> Final-year Computer Science student with hands-on experience in cybersecurity operations and a growing skill set in front-end web development. Experienced in SIEM monitoring (Wazuh), vulnerability assessment, and basic network tools like Wireshark and Packet Tracer. Actively building projects using HTML and GitHub while learning CSS, JavaScript, and responsive design. Open to trainee or entry-level roles in both web development and information security, with a strong drive to grow in any tech domain where opportunity exists. Currently awaiting official graduation, having completed all coursework.</section>
     </p>
-    <hr>
+    </main>
     <p>
         <big>
             Other Pages Link 
         </big>
         <br>
         Education:
-        <a href="/education.html"> Education</a>
+        <a href="/education.html" target="_blank"> Education</a>
         <br>
-            Experience:
-        <a href="experience.html"> experience</a>
+        Experience:
+        <a href="experience.html" target="_blank" > experience</a>
         <br>
         Projects:
-        <a href="projects.html"> Projects</a>
-
-
+        <a href="projects.html" target="_blank"> Projects</a>
     </p>
+    <h2>Contact Me</h2>
+    <form action="/action.php">
+        <input type="text" name="name" placeholder="Your Full Name">
+        <br><br>
+        <input type="email" name="email" placeholder="Your Email Address">
+        <br><br>
+        <big><p>Who Are You?</p></big>
+        <label for="Recruiter/HR">
+        <input type="radio" Value="Recruiter/HR" name="type" id="Recruiter/HR" class="radio button">Recruiter/HR
+        </label>
+        <label for="Colleague">
+        <input type="radio" Value="Colleague" name="type" id="Colleague" class="radio button">Colleague
+        </label>
+        <label for="Friend">
+        <input type="radio" value="Friend" name="type" id="Friend" class="radio button">Friend
+        </label>
+        <label for="Junior">
+        <input type="radio" value="Junior" name="type" id="Junior" class="radio button"> Junior
+        </label>
+        <br><br>
+
+        <big>What can i help you with?</big><br><br>
+        <label for="web Dev"></label><input type="checkbox" name="help" value="Web Dev" id="Web Dev">Web Dev
+        </label>
+        <label for="cybersecurity"><input type="checkbox" name="help" value="cybersecurity" id="Cyber security"> cybersecurity
+        </label>
+        <label for="Career Guidance"><input type="checkbox" name="help" value="Career Guidance" id="Career Guidance"> Career Guidance
+        </label> <br><br>
+        <big><p>Why are you Contacting me?</p></big>
+        <select name="purpose">
+        <option value=""> Select An option </option>
+        <option value="Job Offer"> Job Offer </option>
+        <option value="Project Collab"> Project Collab</option>
+        <option value="Need Help"> Need Help</option>
+        </select>
+
+        <big><p>Feedback or message</p></big>
+         <textarea name="feedback or message" placeholder="Have a question or request? Type it here." rows="5" cols="100"></textarea>
+         <br><br>
+         <input type="submit" value="submit">
+         <footer></footer>
+
+    </form>
 </body>
 </html>
